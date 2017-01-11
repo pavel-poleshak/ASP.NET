@@ -9,7 +9,11 @@ namespace Lesson_1_1.Controllers
     public class ProductsController : Controller
     {
         // GET: Products
-        public ActionResult Index()
+        public ActionResult List()
+        {
+            return View();
+        }
+        public ActionResult Details()
         {
             return View();
         }
