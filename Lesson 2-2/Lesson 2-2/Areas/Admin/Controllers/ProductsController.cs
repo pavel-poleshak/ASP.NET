@@ -13,5 +13,9 @@ namespace Lesson_2_2.Areas.Admin.Controllers
         {
             return View();
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
