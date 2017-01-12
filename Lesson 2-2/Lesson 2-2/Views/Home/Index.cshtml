@@ -13,6 +13,7 @@
 <body>
     <div> 
         <h1>Index</h1>
+        <h4>@Html.RouteLink("AdminArea", new {action="Index",controller="Home", area ="Admin" })</h4>
         @Html.ActionLink("About", "About") | @Html.ActionLink("Contacts", "Contacts")
 
     </div>
