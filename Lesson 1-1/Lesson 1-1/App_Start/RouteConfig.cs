@@ -18,6 +18,11 @@ namespace Lesson_1_1
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "CustomerXY",
+                url: "{controller}/{action}/{x}/{y}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model Lesson_1_1.Controllers.ProductsController
+﻿@model IEnumerable<Lesson_1_1.Models.Product> 
 @{
     Layout = null;
 }
@@ -9,20 +9,36 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <style>
+        td {
+            border:groove 1px black;
+        }
+    </style>
 </head>
 <body>
     <div> 
-        <h1>Products/List Page</h1>
-        <ul>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+        <h1>Products</h1>
+        <table>
+            <tr>
+                <th>Product</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Name
+                    </td>
+                    
+                </tr>
+               
+            }
+        </table>
+        
+           
 
-        </ul>
+           
+
+        
     </div>
 </body>
 </html>

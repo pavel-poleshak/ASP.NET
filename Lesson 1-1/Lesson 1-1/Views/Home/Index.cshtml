@@ -1,7 +1,7 @@
 ﻿
 @{
     Layout = null;
-    
+
 
 }
 
@@ -15,7 +15,13 @@
 <body>
     <div> 
         <h4>Hello, friend!. It's Main page</h4>
-        @Href("/Products/List")
+        <a href="/Products/Details"> ProductsDetails</a>
+        <a href="/Products/List"> ProductList</a>
+        <a href="/Customers/Add"> CustomerAdd</a>
+        <p>
+            @Html.ActionLink("ProductDetails","Details","Products")
+        </p>
+       Result = @ViewBag.Result
     </div>
 </body>
 </html>
