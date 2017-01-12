@@ -17,5 +17,9 @@ namespace Lesson_2_2.Controllers
         {
             return View();
         }
+        public ActionResult Contacts()
+        {
+            return View();
+        }
     }
 }
