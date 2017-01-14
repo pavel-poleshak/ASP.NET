@@ -13,5 +13,9 @@ namespace Lesson_3_1.Controllers
         {
             return View();
         }
+        public ActionResult Products()
+        {
+            return View();
+        }
     }
 }
