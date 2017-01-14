@@ -1,1 +1,14 @@
-﻿
+﻿@model IEnumerable<Lesson_3_2.Models.Product>
+
+
+@foreach (var item in Model)
+{
+    <div>
+        <ul>
+            <li>Product ID: @item.ID</li>
+            <li>Product Name: @item.Name</li>
+            <li>Product Price: @item.Price</li>
+            <li>Product Created Date: @item.CreatedDate.ToShortDateString()</li>
+        </ul>
+    </div>
+}

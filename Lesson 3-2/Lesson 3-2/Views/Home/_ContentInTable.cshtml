@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Lesson_3_2.Models.Product>
+
+
+<table>
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Price $</th>
+        <th>Product Creation Date</th>
+    </tr>
+</table>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.Name</td>
+        <td>@item.Price</td>
+        <td>@item.CreatedDate.ToShortDateString()</td>
+    </tr>
+}
+
+
+

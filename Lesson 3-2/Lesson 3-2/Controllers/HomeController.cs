@@ -15,14 +15,15 @@ namespace Lesson_3_2.Controllers
             return View();
         }
 
+        [ChildActionOnly]
         public ActionResult ShowContent()
         {
             List<Product> products = new List<Product>();
             for (int i = 0; i < 20; i++)
             {
-                products.Add(new Product() { ID = i + 1, Name = "Product" + i + 1, Price = i * i * 2, CreatedDate = DateTime.Now });
+                products.Add(new Product() { ID = i + 1, Name = "Product" + (i+1), Price = i * i * 2, CreatedDate = DateTime.Now });
             }
-            return PartialView("_Content");
+            return PartialView("_Content", products);
         }
 
 
