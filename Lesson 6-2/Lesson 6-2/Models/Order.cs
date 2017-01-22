@@ -7,6 +7,7 @@ namespace Lesson_6_2.Models
 {
     public class Order
     {
+        public int OrderID { get; set; }
        public IEnumerable<Product> ProductList { get; set; }
         public int ProductsCount
         {
@@ -22,6 +23,7 @@ namespace Lesson_6_2.Models
                 return DateTime.Now;
             }
         }
+        public User User { get; set; }
 
     }
 }
