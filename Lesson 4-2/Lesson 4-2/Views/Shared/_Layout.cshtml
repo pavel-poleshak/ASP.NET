@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="right-menu">
+        @Html.ActionLink("Вход", "Login") | @Html.ActionLink("Регистрация", "Registration")
+        
+    </div>
+    <div class="left-menu">
+        @Html.ActionLink("Домашняя", "Index") | @Html.ActionLink("Новости", "News") | @Html.ActionLink("О нас", "AboutUs")
+
+    </div> 
+        
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+@using (@Html.BeginForm())
+{
+    <label>Логин</label> @Html.TextBox("Login") <br />
+    <label>Парроль</label> @Html.TextBox("Password") <br />
+    <input type="submit" value="Войти" />
+}
+@if (ViewBag.Message !=null)
+{
+   <p> @ViewBag.Message </p>
+}
+

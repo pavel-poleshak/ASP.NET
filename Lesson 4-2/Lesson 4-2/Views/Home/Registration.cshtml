@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Registration</h2>
+@using (Html.BeginForm())
+{
+    <label>Логин</label> @Html.TextBox("Login") <br />
+    <label>Пароль</label> @Html.TextBox("Password") <br />
+    <label>подтверждение парля</label> @Html.TextBox("PasswordConfirm")<br />
+    <label>E-Mail</label> @Html.TextBox("EMail") <br />
+    <input type="submit" value="Регистрация" />
+
+
+}
+
