@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Lesson_6_2.Controllers
 {
-    public class UserController : Controller
+    public class UsersController : Controller
     {
         // GET: User
         public ActionResult Index()

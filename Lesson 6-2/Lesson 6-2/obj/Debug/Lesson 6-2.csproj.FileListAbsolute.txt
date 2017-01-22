@@ -83,6 +83,5 @@ D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\bin\ru\Microsoft.Owin.Security.Facebook.
 D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\bin\ru\Microsoft.Owin.Security.Google.resources.dll
 D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\bin\ru\Microsoft.Owin.Security.Twitter.resources.dll
 D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\bin\ru\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
-D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\obj\Debug\Lesson 6-2.csprojResolveAssemblyReference.cache
 D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\obj\Debug\Lesson 6-2.dll
 D:\GitHub\ASP.NET\Lesson 6-2\Lesson 6-2\obj\Debug\Lesson 6-2.pdb
