@@ -8,10 +8,18 @@ namespace Lesson_6_2.Models
     public class Order
     {
        public IEnumerable<Product> ProductList { get; set; }
-        public int ProductsCount {
+        public int ProductsCount
+        {
             get
             {
                 return ProductList.Count();
+            }
+        }
+        public DateTime BuyingDate
+        {
+            get
+            {
+                return DateTime.Now;
             }
         }
 
